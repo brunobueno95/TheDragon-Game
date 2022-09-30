@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Aref+Ruqaa+Ink:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/model.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <!-- Controllere -->
+    <script src="js/objectCreators.js"></script>
+    <script src="js/loginController.js"></script>
+    <script src="js/createUserController.js"></script>
+    <script src="js/mainPageController.js"></script>
+    <script src="js/findController.js"></script>
+    <script src="js/forestController.js"></script>
+    <script src="js/mountainController.js"></script>
+    <script src="js/desertController.js"></script>
+    <script src="js/desertFindController.js"></script>
+    <script src="js/oceanFindController.js"></script>
+    <script src="js/oceanController.js"></script>
+    <script src="js/battleController.js"></script>
+    <script src="js/ItemsShopController.js"></script>
+    <script src="js/explorerController.js"></script>
+    <script src="js/tradeCenterController.js"></script>
+    <script src="js/notificationsController.js"></script>
+   
+   
+
+
+   <!-- Views-->
+    <script src="js/loginView.js"></script>
+    <script src="js/createUserView.js"></script>   
+    <script src="js/mainPageView.js"></script> 
+    <script src="js/findView.js"></script> 
+    <script src="js/battleView.js"></script>
+    <script src="js/forestView.js"></script>
+    <script src="js/mountainView.js"></script>
+    <script src="js/desertView.js"></script>
+    <script src="js/desertFindView.js"></script>
+    <script src="js/oceanView.js"></script>
+    <script src="js/oceanFindView.js"></script>
+    <script src="js/ItemsShopView.js"></script>
+    <script src="js/explorerView.js"></script>
+    <script src="js/tradeCenterView.js"></script>
+    <script src="js/tradeCenterPost.js"></script>
+    <script src="js/tradeCenterAll.js"></script>
+    <script src="js/notificationsView.js"></script>
+   
+   
+    
+</head>
+<body>
+  <div id="app"></div>
+
+   <script>
+    
+    updateView()
+    function updateView(){
+        let html = ""
+      
+        if(model.currentPage == "login")html = updateViewLogin()
+        if(model.currentPage == "createUser")html = updateViewCreateUser()
+        if(model.currentPage == "mainPage")html = updateViewMainPage()
+        if(model.currentPage == "forest") html = updateViewForest();
+        if(model.currentPage == "find") html = updateViewFind();
+        if(model.currentPage == "battle")html = updateViewBattle(); 
+        if(model.currentPage == "itemShop")html = updateViewItemShop(); 
+        if(model.currentPage == "mountain")html = updateViewMountain(); 
+        if(model.currentPage == "desert")html = updateViewDesert(); 
+        if(model.currentPage == "ocean")html = updateViewOcean(); 
+        if(model.currentPage == "explorer")html = updateViewExplorer();
+        if(model.currentPage == "desertFind")html = updateViewDesertFind(); 
+        if(model.currentPage == "oceanFind")html = updateViewOceanFind();
+        if(model.currentPage == "tradeCenterView")html = updateViewTradeCenter();
+        if(model.currentPage == "tradeCenterAll")html = updateViewTradeCenterAll();
+        if(model.currentPage == "tradeCenterPost")html = updateViewTradeCenterPost();
+        if(model.currentPage == "notifications")html = updateViewNotifications();
+        
+
+        
+
+        document.getElementById("app").innerHTML = html
+    }
+ 
+   </script>
+    
+</body>
+</html>

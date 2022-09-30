@@ -1,0 +1,360 @@
+
+body {
+    background-image: url("imgs/black-brick-wall.jpg");
+    background-color: rgb(61, 53, 53);
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    font-family: 'Aref Ruqaa Ink', serif;
+    font-weight: 800;
+    color: whitesmoke;
+}
+
+
+h2 {
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+.menu-bar {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.username-container {
+    
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    border-color: rgb(34, 34, 34);
+    border-width: 15px;
+    border-style: groove;
+    background-color: #708090;
+    margin-top: 10px;
+    margin-left: 500px;
+}
+
+.user-info {
+    margin: 3px;
+    padding: 3px;
+}
+
+button {
+    font-family: 'Aref Ruqaa Ink', serif;
+    margin: 5px;
+    padding: 5px;
+    width: auto;
+    height: 30px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+button:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+button:active {
+    color: #000
+}
+
+button:active:after {
+    background: transparent;
+}
+
+button:hover:before {
+    opacity: 1;
+}
+
+button:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+.menu-btns {
+    width: 15%;
+}
+.header-btns {
+    width: 25%;
+}
+
+.explore-btns {
+    width: 300px;
+    height: 100px;
+}
+.video-full-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.video-wrapper {
+    /* Telling our absolute positioned video to 
+    be relative to this element */
+    position: relative;
+  
+    width: 98.9vw;
+    height: 120vh;
+  
+    /* Will not allow the video to overflow the 
+    container */
+    overflow: hidden;
+  
+    /* Centering the container's content vertically 
+    and horizontally */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+.video-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.video-explore {
+    border: 2px solid #000;
+    width: 509px;
+    height: 710px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+.video-div {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.background{
+  margin:0%;
+  width: 1536px;
+  height: 864px;
+  background-image:    url(imgs/space-for-login.webp);
+  background-size:     cover;                      /* <------ */
+  background-repeat:   no-repeat;
+  background-position: center center
+
+}
+
+.login {
+  overflow: hidden;
+  background-color: rgb(90, 58, 58);
+  padding: 20px 10px 10px 10px;
+  border-radius: 10px;
+  padding-top: 290px;
+
+    margin-top: 200px;
+  text-align: center;
+  
+  width: 400px;
+  height:400px;
+  position: absolute;
+  top: 8%;
+  left: 40%;
+  margin: -25px 0 0 -25px;
+
+  background-image:    url(imgs/dragonlogin.png);
+  background-size:     cover;                      /* <------ */
+  background-repeat:   no-repeat;
+  background-position: center center;
+
+   }
+
+
+   .input{
+    margin:15px;
+    width: 280px;
+  height:40px;
+   }
+
+   .btnlogin{
+    height: 60px;
+    width: 140px;
+    font-size:large;
+    background: rgb(172, 160, 160);
+    
+   }
+  
+.random-find {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: row;
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    margin: -25px 0 0 -25px;
+    
+}
+
+.user-dragon-container {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    column-gap: 20px;
+    margin-left: 250px;
+    margin-top: 30px;
+    width: fit-content;
+}
+
+.user-dragon {
+    width: fit-content;
+    border-color: rgb(34, 34, 34);
+    border-width: 15px;
+    border-style: groove;
+    background-color: #708090;
+}
+
+.user-dragon img {
+    height: 400px;
+    width: 250px;
+}
+
+.dragon-stats {
+    font-size: x-large;
+    align-self: center;
+    flex-direction: row;
+    width: fit-content;
+    height: 334px;
+    margin: 0;
+    padding: 40px;
+    border-color: rgb(34, 34, 34);
+    border-width: 15px;
+    border-style: groove;
+    background-color: #708090; 
+}
+.items-materials-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.items-container{
+    align-content: space-around;
+    width: fit-content;
+    border-color: rgb(34, 34, 34);
+    border-width: 15px;
+    border-style: groove;
+    background-color: #708090;
+    margin: 30px;
+}
+
+.your-items {
+    flex-direction: row;
+    margin: 3px;
+    padding: 3px;
+}
+
+.item-shop {
+    border-color: rgb(34, 34, 34);
+    border-width: 15px;
+    border-style: groove;
+    background-color: #708090;
+    margin: 30px;
+}
+
+/* .custom-select {
+    position: relative;
+    font-family: Arial;
+  }
+
+  .custom-select select {
+    display: none;
+  }
+
+  .select-selected {
+    background-color: rgb(39, 39, 40);
+  }
+
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+  }
+
+  .select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+  }
+
+  .select-items {
+    position: absolute;
+    background-color: rgb(39, 39, 40);
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+
+  .select-hide {
+    display: none;
+  }
+
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  } */
