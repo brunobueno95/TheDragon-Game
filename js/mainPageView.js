@@ -5,8 +5,8 @@ function  updateViewMainPage(){
     let html = ""
     
    html = `
-   <div style="display:flex; align-content:center; justify-content:center;">
-    <div style="margin-left:200px;" class="menu-bar">
+
+    <div  class="menu-bar">
         <button onclick="openItemShop()" class="menu-btns">Item Shop</button> 
         <button onclick="goToExplorer()" class="menu-btns">Explore</button> 
         <button onclick="goToTradeCenterView()" class="menu-btns">Trade Market</button>
@@ -65,7 +65,7 @@ function  updateViewMainPage(){
             <img src="imgs/faster.png" style="height:40px;width:40px;">
             Agility:${findUserDragon().agility} </div>
         </div>
-    </div> </div>`
+    </div> `
 
     html+= `
         <div class="items-materials-container">
