@@ -6,7 +6,7 @@ function  updateViewMainPage(){
     
    html = `
    <div style="display:flex; align-content:center; justify-content:center;">
-    <div class="menu-bar">
+    <div style="margin-left:200px;" class="menu-bar">
         <button onclick="openItemShop()" class="menu-btns">Item Shop</button> 
         <button onclick="goToExplorer()" class="menu-btns">Explore</button> 
         <button onclick="goToTradeCenterView()" class="menu-btns">Trade Market</button>
