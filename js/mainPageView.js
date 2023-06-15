@@ -11,7 +11,7 @@ function  updateViewMainPage(){
         <button onclick="goToTradeCenterView()" class="menu-btns">Trade Market</button>
         <button onclick="logOut()" class="menu-btns">LogOut</button>
     </div>
-
+<div style="display:flex; align-content:center; justify-content:center;">
     <div class="username-container" style="align-items:center;">
         <div class ="user-info">Logged in as: ${model.currentUser}</div>
         
@@ -64,7 +64,7 @@ function  updateViewMainPage(){
             <img src="imgs/faster.png" style="height:40px;width:40px;">
             Agility:${findUserDragon().agility} </div>
         </div>
-    </div>`
+    </div> </div>`
 
     html+= `
         <div class="items-materials-container">
