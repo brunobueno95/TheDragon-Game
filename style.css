@@ -24,8 +24,7 @@ h3{
 .menu-bar {
     margin-top: 20px;
     display: flex;
-    flex-direction:row;
-    gap:8px;
+   
     justify-content:center;
 }
 
