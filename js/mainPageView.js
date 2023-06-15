@@ -5,13 +5,14 @@ function  updateViewMainPage(){
     let html = ""
     
    html = `
+   <div style="display:flex; align-content:center; justify-content:center;">
     <div class="menu-bar">
         <button onclick="openItemShop()" class="menu-btns">Item Shop</button> 
         <button onclick="goToExplorer()" class="menu-btns">Explore</button> 
         <button onclick="goToTradeCenterView()" class="menu-btns">Trade Market</button>
         <button onclick="logOut()" class="menu-btns">LogOut</button>
     </div>
-<div style="display:flex; align-content:center; justify-content:center;">
+
     <div class="username-container" style="align-items:center;">
         <div class ="user-info">Logged in as: ${model.currentUser}</div>
         
